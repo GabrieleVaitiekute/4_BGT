@@ -6,6 +6,13 @@
 
 ## 1. Verslo modelis
 
+B2C meno įrankių parduotuvė. B2C (bussines to customer) - Verslas parduoda prekes vartotojui, o nuosavybės teisė perduodama po apmokėjimo.
+Šiame verslo modelyje dalyvauja:
+ + Pardavėjas – parduoda meno įrankius (pieštukus, dažus, drobes ir kt.).
+ + Pirkėjas – perka meno įrankius, naudodamasis decentralizuota aplikacija.
+ + Kurjeris – pristato prekes pirkėjui.
+
+
 ## 2. Verslo logikos realizacija
 
 ## 3. Testavimas
