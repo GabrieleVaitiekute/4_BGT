@@ -19,6 +19,12 @@ Išmaniosios sutarties funkcijos:
  + Lėšos pervedamos pardavėjui tik po sėkmingo pristatymo.
 
 Logika:
+ + Produkto pridėjimas:
+   Pardavėjas gali pridėti produktą, suteikti jam pavadinamą ir kainą.
+   
+ + Produkto "deaktyvavimas":
+   Pardavėjas gali ištrinti produktą iš sąrašo pakeičiant jo kainą į 0.
+
  + Užsakymo pateikimas:
    Pirkėjas pasirenka prekes ir pateikia užsakymą per decentralizuotą aplikaciją.
    Pirkėjas atlieka mokėjimą, o pinigai laikomi išmaniojoje sutartyje kaip užstatas.
@@ -36,9 +42,7 @@ Logika:
  + Apmokėjimas pardavėjui:
    Kai kurjeris patvirtina, kad užsakymas pristatytas, išmanioji sutartis automatiškai perveda prekių kainą pardavėjui.
    
- + Ginčų sprendimas (jei reikalinga):
-   Jei pirkėjas nepatenkintas pristatymu (pvz., prekės sugadintos), jis gali inicijuoti ginčo procesą.
-   Ginčo metu lėšos lieka užrakintos, kol pasiekiamas sprendimas.
+
 
    
 ## 2. Verslo logikos realizacija
@@ -59,16 +63,56 @@ contract ArtStore {
         OrderStatus status;
     }
 
+    struct Product {
+        uint256 productId;
+        string name;
+        uint256 price;
+        address seller;
+    }
+
+    mapping(uint256 => Product) public products;
     mapping(uint256 => Order) private orders;
+    uint256 public nextProductId;
     uint256 public nextOrderId;
 
+    event ProductAdded(uint256 productId, string name, uint256 price);
     event OrderCreated(uint256 orderId, address buyer, uint256 price);
     event OrderStatusUpdated(uint256 orderId, OrderStatus status);
     event PaymentReleased(uint256 orderId, address seller);
 
+    // Produkto kūrimas
+    function addProduct(string calldata name, uint256 price) external {
+        require(price > 0, "Price must be greater than zero");
+
+        uint256 productId = nextProductId++;
+        products[productId] = Product({
+            productId: productId,
+            name: name,
+            price: price,
+            seller: msg.sender 
+        });
+
+        emit ProductAdded(productId, name, price);
+    }
+
+     // Produkto "deaktyvavimas"
+    function removeProduct(uint256 productId) external {
+    Product storage product = products[productId];
+    require(product.price > 0, "Product does not exist or is already removed");
+    require(product.seller == msg.sender, "Only the seller can remove this product");
+
+    product.price = 0; // Pažymime produktą kaip nebegaliojantį
+    emit ProductAdded(productId, product.name, 0); // Pakeičiame kainą į 0
+}
+
     // Užsakymo kūrimas
-    function createOrder(address seller, address courier) external payable {
+    function createOrder(address seller, address courier, uint256 productId) external payable {
+        
+        Product memory product = products[productId];
+        require(product.price > 0, "Invalid product");
         // Patikrina, ar pirkėjas atlieka mokėjimą
+
+        require(msg.value == product.price, "Incorrect payment amount");
         require(msg.value > 0, "Payment required to create order");
          // Užtikrina, kad pardavėjo adresas yra galiojantis
         require(seller != address(0), "Invalid seller address");
@@ -130,6 +174,7 @@ contract ArtStore {
         return orders[orderId];
     }
 }
+
 ```
 
 ## 3. Testavimas
