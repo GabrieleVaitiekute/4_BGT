@@ -95,25 +95,13 @@ contract ArtStore {
         emit ProductAdded(productId, name, price);
     }
 
-     // Produkto "deaktyvavimas"
-    function removeProduct(uint256 productId) external {
-    Product storage product = products[productId];
-    require(product.price > 0, "Product does not exist or is already removed");
-    require(product.seller == msg.sender, "Only the seller can remove this product");
-
-    product.price = 0; // Pažymime produktą kaip nebegaliojantį
-    emit ProductAdded(productId, product.name, 0); // Pakeičiame kainą į 0
-}
-
     // Užsakymo kūrimas
     function createOrder(address seller, address courier, uint256 productId) external payable {
         
         Product memory product = products[productId];
         require(product.price > 0, "Invalid product");
         // Patikrina, ar pirkėjas atlieka mokėjimą
-
         require(msg.value == product.price, "Incorrect payment amount");
-        require(msg.value > 0, "Payment required to create order");
          // Užtikrina, kad pardavėjo adresas yra galiojantis
         require(seller != address(0), "Invalid seller address");
          // Užtikrina, kad kurjerio adresas yra galiojantis
@@ -164,7 +152,9 @@ contract ArtStore {
         uint256 payment = order.price;
         order.price = 0; // Apsauga nuo pakartotinio vykdymo
 
-        payable(order.seller).transfer(payment);
+        
+        (bool success, ) = payable(order.seller).call{value: payment}("");
+        require(success, "Payment failed");
 
         emit PaymentReleased(orderId, order.seller);
     }
@@ -178,7 +168,13 @@ contract ArtStore {
 ```
 
 ## 3. Testavimas
-
+### Lokalus
+1. Remix IDE pasirinkau 0.8.26 versiją ir po kompiliavimo kodą rodo, kad kompiliacija sėkminga.
+2. Lokalūjį testavimą nusprendžiau daryti su Ganache. Parsisiuntus ir įsijungus programą paspažiau „Quickstart Ethereum“ ir man pakrovė 10 account'ų.
+3. Remix IDE nuėjau į „Deploy & run transactions“ ir prie environment pasirinkau „Custom - external http provider“ ir pakeičiau RCP URL galą į 7545, kad sutaptų su Ganache'je nurodytu.
+4. Paspaudžiau Deploy
+   Čia iškilo problema, nes išmetė pranešimą „Gas estimation failed“. Nors aš ir spausdavau „Cancel transaction“ account'ų skiltyje vistiek rodė Ganache's sukurtus account'us. Pasidomėjau, kodėl iškilo ši problema ir nusprendžiau dar kartą taisyti kodą. Pataisius is supaprastinus šiek tiek kodą ir bandžius deploy'int problema išliko. Taip pat buvo siūlyta  pakeisti versiją su kuria kompiliavau į šiek tiek senesnę, nes problema galėoj kilti dėl evm versijų nesuderinamumo, bet tai taip pat nepadėjo. Kodą tikrinau daugybę kartų ir neradau klaidų ar vietų keliančių problemų, taigi nuspredžiau, jog problema kyla bandant atlikti testavimą, o ne su pačiu kodu.
+   Lokalaus testavimo atlikti nepavyko, todėl nusprendžiau, kad geriau nebandyti ir testuoti tinkle ir atlikti sekančių užduočių.
 ## 4. Logų peržiūra
 
 ## 5. Front-end
