@@ -280,7 +280,8 @@ Tik pardavėjo account'o kiekis pinigų pasikeitė - padidėjo.
 
 Atlikti tinkliniam testavimui parsisiunčiau MetaMask ir susikūriau piniginę. 
 
-<img  src="https://github.com/user-attachments/assets/89657eea-0d79-447d-96c1-220992705213"   width="500">
+<img  src="https://github.com/user-attachments/assets/cfa4f845-76da-4c1b-9f0f-05ee37e7c727"  width="500">
+
 
 ## 4. Logų peržiūra
 
