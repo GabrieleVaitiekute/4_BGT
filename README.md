@@ -186,7 +186,7 @@ Taip pat Ganache programoje prie transakcijų rodė „Contact creation“, prie
 
 Prie account'ų galime matyti, kad buvo nuskaičiuota dėl sukūrimo.
 
-<img  src="https://github.com/user-attachments/assets/697dd3c2-f987-4485-a409-0f4da4b71a62"   width="200">
+<img  src="https://github.com/user-attachments/assets/697dd3c2-f987-4485-a409-0f4da4b71a62"   width="500">
 
 Na o Remix galima matyti funkijas, kurias reikia pratestuoti.
 
@@ -270,7 +270,7 @@ Pakeičiau account'ą į nurodyta kurjerio account'ą createOrder funkcijoje.
 
 Remix „Debug“ prie bloko galima matyti, kad status yra 2, tai reiškia, kad statusas pakeistas į „delivered“.
 
-<img  src="https://github.com/user-attachments/assets/f3c29b9a-1841-43bf-be2a-9063baeab57d"   width="400">
+<img  src="https://github.com/user-attachments/assets/f3c29b9a-1841-43bf-be2a-9063baeab57d"   width="500">
 
 Tik pardavėjo account'o kiekis pinigų pasikeitė - padidėjo. 
 
