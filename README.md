@@ -186,7 +186,7 @@ Taip pat Ganache programoje prie transakcijų rodė „Contact creation“, prie
 
 Prie account'ų galime matyti, kad buvo nuskaičiuota dėl sukūrimo.
 
-<img  src="https://github.com/user-attachments/assets/697dd3c2-f987-4485-a409-0f4da4b71a62"   width="100">
+<img  src="https://github.com/user-attachments/assets/697dd3c2-f987-4485-a409-0f4da4b71a62"   width="200">
 
 Na o Remix galima matyti funkijas, kurias reikia pratestuoti.
 
@@ -196,7 +196,7 @@ Na o Remix galima matyti funkijas, kurias reikia pratestuoti.
 
 Remix palikau tą pati account'ą, su kuriuo sukūriau konraktą, ir prie produkto info įvedžiau jo pavadinimą ir kainą. 1000000000000000000 Wei = 1 Eth.
    
-<img  src="https://github.com/user-attachments/assets/390fbe98-e7e9-4371-8161-0db0afe73b83"  width="80">
+<img  src="https://github.com/user-attachments/assets/390fbe98-e7e9-4371-8161-0db0afe73b83"  width="200">
 
 „Debug“ skyrelyje pasirodė blokas.
 
@@ -218,7 +218,7 @@ Remix prie products įvedus produkto kodą galima matyti jo informaciją.
 
 Pakeičiau account'ą į kitą ir įvedžiau norimo produkto kainą.
 
-<img  src="https://github.com/user-attachments/assets/bf470014-7b1a-4870-84f1-26699a4e07f2"   width="500">
+<img  src="https://github.com/user-attachments/assets/bf470014-7b1a-4870-84f1-26699a4e07f2"   width="200">
 
 Taip pat įvedžiau produkto pardavėjo ir kurjerio address ir produkto ID.
 
@@ -262,19 +262,19 @@ Taip pat pasipildė transakcijų sąrašas.
 
 Pakeičiau account'ą į nurodyta kurjerio account'ą createOrder funkcijoje. 
 
-<img  src="https://github.com/user-attachments/assets/41e22d8a-4248-4258-816c-d65a29c60fc5"   width="100">
+<img  src="https://github.com/user-attachments/assets/41e22d8a-4248-4258-816c-d65a29c60fc5"   width="200">
 
 Įvedžiau OrderID. 
 
-<img  src="https://github.com/user-attachments/assets/6b6220a3-3352-48ae-8d04-29365b1d7ce3"   width="100">
+<img  src="https://github.com/user-attachments/assets/6b6220a3-3352-48ae-8d04-29365b1d7ce3"   width="200">
 
 Remix „Debug“ prie bloko galima matyti, kad status yra 2, tai reiškia, kad statusas pakeistas į „delivered“.
 
-<img  src="https://github.com/user-attachments/assets/f3c29b9a-1841-43bf-be2a-9063baeab57d"   width="300">
+<img  src="https://github.com/user-attachments/assets/f3c29b9a-1841-43bf-be2a-9063baeab57d"   width="400">
 
 Tik pardavėjo account'o kiekis pinigų pasikeitė - padidėjo. 
 
-<img  src="https://github.com/user-attachments/assets/80156007-c88c-458a-b296-b9811da95c6a"   width="300">
+<img  src="https://github.com/user-attachments/assets/80156007-c88c-458a-b296-b9811da95c6a"   width="400">
 
 ## 4. Logų peržiūra
 
