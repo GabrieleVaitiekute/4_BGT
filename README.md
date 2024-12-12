@@ -276,6 +276,12 @@ Tik pardavėjo account'o kiekis pinigų pasikeitė - padidėjo.
 
 <img  src="https://github.com/user-attachments/assets/80156007-c88c-458a-b296-b9811da95c6a"   width="400">
 
+### Tinklinis
+
+Atlikti tinkliniam testavimui parsisiunčiau MetaMask ir susikūriau piniginę. 
+
+<img  src="https://github.com/user-attachments/assets/89657eea-0d79-447d-96c1-220992705213"   width="500">
+
 ## 4. Logų peržiūra
 
 ## 5. Front-end
