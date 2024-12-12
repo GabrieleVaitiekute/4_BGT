@@ -172,8 +172,61 @@ contract ArtStore {
 2. Lokalūjį testavimą nusprendžiau daryti su Ganache. Parsisiuntus ir įsijungus programą paspažiau „Quickstart Ethereum“ ir man pakrovė 10 account'ų.
 3. Remix IDE nuėjau į „Deploy & run transactions“ ir prie environment pasirinkau „Custom - external http provider“ ir pakeičiau RCP URL galą į 7545, kad sutaptų su Ganache'je nurodytu.
 4. Paspaudžiau Deploy
-   Čia iškilo problema, nes išmetė pranešimą „Gas estimation failed“. Nors aš ir spausdavau „Cancel transaction“ account'ų skiltyje vistiek rodė Ganache's sukurtus account'us. Pasidomėjau, kodėl iškilo ši problema ir nusprendžiau dar kartą taisyti kodą. Pataisius is supaprastinus šiek tiek kodą ir bandžius deploy'int problema išliko. Taip pat buvo siūlyta  pakeisti versiją su kuria kompiliavau į šiek tiek senesnę, nes problema galėoj kilti dėl evm versijų nesuderinamumo, bet tai taip pat nepadėjo. Kodą tikrinau daugybę kartų ir neradau klaidų ar vietų keliančių problemų, taigi nuspredžiau, jog problema kyla bandant atlikti testavimą, o ne su pačiu kodu. Tuomet išsiaiškinau, kaip suderinti evm versijas. Remix IDE failą sukompiliavau su 0.8.0 versija, o Ganache hardfork nustačiau į Istanbul. Tada vėl atlikus 2-4 punktus ir jie visi praėjo sėkmingai. 
-   Lokalaus testavimo atlikti nepavyko, todėl nusprendžiau, kad geriau nebandyti ir testuoti tinkle ir atlikti sekančių užduočių.
+   Čia iškilo problema, nes išmetė pranešimą „Gas estimation failed“. Nors aš ir spausdavau „Cancel transaction“ account'ų skiltyje vistiek rodė Ganache's sukurtus account'us. Pasidomėjau, kodėl iškilo ši problema ir nusprendžiau dar kartą taisyti kodą. Pataisius is supaprastinus šiek tiek kodą ir bandžius deploy'int problema išliko. Taip pat buvo siūlyta  pakeisti versiją su kuria kompiliavau į šiek tiek senesnę, nes problema galėoj kilti dėl evm versijų nesuderinamumo, bet tai taip pat nepadėjo. Kodą tikrinau daugybę kartų ir neradau klaidų ar vietų keliančių problemų, taigi nuspredžiau, jog problema kyla bandant atlikti testavimą, o ne su pačiu kodu. Tuomet išsiaiškinau, kaip suderinti evm versijas. Remix IDE failą sukompiliavau su 0.8.0 versija, o Ganache hardfork nustačiau į Istanbul. Tada vėl atlikus 2-4 punktus ir jie visi praėjo sėkmingai.
+   
+![Screenshot 2024-12-12 103216](https://github.com/user-attachments/assets/fc8df274-2fab-4f78-8abb-b7518013bb6e)
+
+![Screenshot 2024-12-12 103222](https://github.com/user-attachments/assets/7a9cd208-d370-4ff0-8083-87baa9cd6fa2)
+ 
+![Screenshot 2024-12-12 103226](https://github.com/user-attachments/assets/ef38759c-76d0-4e49-9844-cd8bbacacda8)
+
+![Screenshot 2024-12-12 103232](https://github.com/user-attachments/assets/481060c9-d9b8-4749-bc0c-ec9d774da81b)
+
+![Screenshot 2024-12-12 103238](https://github.com/user-attachments/assets/697dd3c2-f987-4485-a409-0f4da4b71a62)
+
+6. Tikrinau funkciją addProduct
+![Screenshot 2024-12-12 103409](https://github.com/user-attachments/assets/390fbe98-e7e9-4371-8161-0db0afe73b83)
+
+![Screenshot 2024-12-12 103419](https://github.com/user-attachments/assets/dcc832b8-5a29-4e01-b88d-2f215227a139)
+
+![Screenshot 2024-12-12 103429](https://github.com/user-attachments/assets/78f3d71c-f806-4e88-9c53-d67f5d2bc3c9)
+
+![Screenshot 2024-12-12 103433](https://github.com/user-attachments/assets/2313490f-8b4c-46b4-b533-932041115dff)
+
+![Screenshot 2024-12-12 103455](https://github.com/user-attachments/assets/876586c2-d7a6-4fe2-af95-50a89ebca6a4)
+
+7. Tikrinau funkciją createOrder
+![Screenshot 2024-12-12 103758](https://github.com/user-attachments/assets/bf470014-7b1a-4870-84f1-26699a4e07f2)
+
+![Screenshot 2024-12-12 103803](https://github.com/user-attachments/assets/c58bbdd5-32b8-4168-8a46-61b0cbb5b7da)
+
+![Screenshot 2024-12-12 103823](https://github.com/user-attachments/assets/72ea32aa-f0fa-4364-85de-20673c32e6ed)
+
+![Screenshot 2024-12-12 103831](https://github.com/user-attachments/assets/e9eb28dd-b97a-47e8-8cd7-9947bb0f1486)
+
+![Screenshot 2024-12-12 103836](https://github.com/user-attachments/assets/d65910ca-38ee-4a7d-8f39-7eff2dc14135)
+
+![Screenshot 2024-12-12 104003](https://github.com/user-attachments/assets/8534e4dc-79d0-470b-8ce8-c6ee6a55923d)
+
+9. Tikrinau funkciją MarkAsShipped
+![Screenshot 2024-12-12 104036](https://github.com/user-attachments/assets/e5d03b36-e75d-438c-b2ab-a2de712e3ca1)
+
+![Screenshot 2024-12-12 104048](https://github.com/user-attachments/assets/f1459c17-b675-48ab-9121-d73259b51f14)
+
+![Screenshot 2024-12-12 104106](https://github.com/user-attachments/assets/8fc44d86-80fa-440b-bf3a-d7ebb1e374b6)
+
+![Screenshot 2024-12-12 104120](https://github.com/user-attachments/assets/bc3e0aed-23a3-41e0-8a6c-a811cdf18584)
+
+11. Tikrinau funkciją MarkAsDelivered
+    
+![Screenshot 2024-12-12 104234](https://github.com/user-attachments/assets/41e22d8a-4248-4258-816c-d65a29c60fc5)
+
+![Screenshot 2024-12-12 104246](https://github.com/user-attachments/assets/6b6220a3-3352-48ae-8d04-29365b1d7ce3)
+
+![Screenshot 2024-12-12 104309](https://github.com/user-attachments/assets/f3c29b9a-1841-43bf-be2a-9063baeab57d)
+
+![Screenshot 2024-12-12 104327](https://github.com/user-attachments/assets/80156007-c88c-458a-b296-b9811da95c6a)
+
 ## 4. Logų peržiūra
 
 ## 5. Front-end
