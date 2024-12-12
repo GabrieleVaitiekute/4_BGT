@@ -283,3 +283,9 @@ Atlikti tinkliniam testavimui parsisiunčiau MetaMask ir susikūriau piniginę. 
 <img  src="https://github.com/user-attachments/assets/795a0d67-2ae1-44a6-b788-58c277888a64"   width="400">
 
 Po apačia testavimui buvo nurodytas pasiūlymai - Sepolia ir Holešky. Sepolia jau integruota į MetaMask, o Holešky ne. Iš padžių reikėjo padaryti, kad rodytų testinius network. Kilo problemu gaunant testitniu eth.
+
+## 3. Front-end
+
+Atlikti minimalų front-end naudojau vs code ir biblioteka web3. Dizainą labai minimalų atlikti pavyko, bet padaryti, kad veiktų, deja, ne.
+
+<img  src="https://github.com/user-attachments/assets/45a06082-101e-4fc0-9835-48d2f994907f"   width="400">
