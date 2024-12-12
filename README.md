@@ -206,7 +206,7 @@ Buvo vėl nuskaičiuota iš pardavėjo account'o.
 
 <img  src="https://github.com/user-attachments/assets/78f3d71c-f806-4e88-9c53-d67f5d2bc3c9"   width="500">
 
-Atsirado dae viena transakciją.
+Atsirado dar viena transakciją.
 
 <img src="https://github.com/user-attachments/assets/2313490f-8b4c-46b4-b533-932041115dff"   width="400">
 
@@ -282,7 +282,7 @@ Atlikti tinkliniam testavimui parsisiunčiau MetaMask ir susikūriau piniginę. 
 
 <img  src="https://github.com/user-attachments/assets/795a0d67-2ae1-44a6-b788-58c277888a64"   width="400">
 
-Po apačia testavimui buvo nurodytas pasiūlymai - Sepolia ir Holešky. Sepolia jau integruota į MetaMask, o Holešky ne. Iš padžių reikėjo padaryti, kad rodytų testinius network. Kilo problemu gaunant testitniu eth.
+Po apačia testavimui buvo nurodytas pasiūlymai - Sepolia ir Holešky. Sepolia jau integruota į MetaMask, o Holešky ne. Iš padžių reikėjo padaryti, kad rodytų testinius network. Kilo problemu gaunant testinių eth.
 
 ## 3. Front-end
 
