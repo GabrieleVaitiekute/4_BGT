@@ -282,4 +282,4 @@ Atlikti tinkliniam testavimui parsisiunčiau MetaMask ir susikūriau piniginę. 
 
 <img  src="https://github.com/user-attachments/assets/795a0d67-2ae1-44a6-b788-58c277888a64"   width="400">
 
-Po apačia testavimui buvo nurodytas pasiūlymas - Sepolia.
+Po apačia testavimui buvo nurodytas pasiūlymai - Sepolia ir Holešky. Sepolia jau integruota į MetaMask, o Holešky ne. Iš padžių reikėjo padaryti, kad rodytų testinius network. Kilo problemu gaunant testitniu eth.
