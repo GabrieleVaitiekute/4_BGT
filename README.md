@@ -174,15 +174,15 @@ contract ArtStore {
 4. Paspaudžiau Deploy
    Čia iškilo problema, nes išmetė pranešimą „Gas estimation failed“. Nors aš ir spausdavau „Cancel transaction“ account'ų skiltyje vistiek rodė Ganache's sukurtus account'us. Pasidomėjau, kodėl iškilo ši problema ir nusprendžiau dar kartą taisyti kodą. Pataisius is supaprastinus šiek tiek kodą ir bandžius deploy'int problema išliko. Taip pat buvo siūlyta  pakeisti versiją su kuria kompiliavau į šiek tiek senesnę, nes problema galėoj kilti dėl evm versijų nesuderinamumo, bet tai taip pat nepadėjo. Kodą tikrinau daugybę kartų ir neradau klaidų ar vietų keliančių problemų, taigi nuspredžiau, jog problema kyla bandant atlikti testavimą, o ne su pačiu kodu. Tuomet išsiaiškinau, kaip suderinti evm versijas. Remix IDE failą sukompiliavau su 0.8.0 versija, o Ganache hardfork nustačiau į Istanbul. Tada vėl atlikus 2-4 punktus ir jie visi praėjo sėkmingai.
    
-<img src="https://github.com/user-attachments/assets/fc8df274-2fab-4f78-8abb-b7518013bb6e"  width="300">
+<img src="https://github.com/user-attachments/assets/fc8df274-2fab-4f78-8abb-b7518013bb6e"  width="200">
 
-<img src="https://github.com/user-attachments/assets/7a9cd208-d370-4ff0-8083-87baa9cd6fa2"  width="500">
- 
-![Screenshot 2024-12-12 103226](https://github.com/user-attachments/assets/ef38759c-76d0-4e49-9844-cd8bbacacda8)
+<img src="https://github.com/user-attachments/assets/7a9cd208-d370-4ff0-8083-87baa9cd6fa2"   width="200">
 
-![Screenshot 2024-12-12 103232](https://github.com/user-attachments/assets/481060c9-d9b8-4749-bc0c-ec9d774da81b)
+<img src="https://github.com/user-attachments/assets/ef38759c-76d0-4e49-9844-cd8bbacacda8"   width="200">
 
-![Screenshot 2024-12-12 103238](https://github.com/user-attachments/assets/697dd3c2-f987-4485-a409-0f4da4b71a62)
+<img src="https://github.com/user-attachments/assets/481060c9-d9b8-4749-bc0c-ec9d774da81b"   width="200">
+
+<img src="https://github.com/user-attachments/assets/697dd3c2-f987-4485-a409-0f4da4b71a62"   width="200">
 
 6. Tikrinau funkciją addProduct
 ![Screenshot 2024-12-12 103409](https://github.com/user-attachments/assets/390fbe98-e7e9-4371-8161-0db0afe73b83)
