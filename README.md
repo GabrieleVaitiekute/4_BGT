@@ -174,9 +174,9 @@ contract ArtStore {
 4. Paspaudžiau Deploy
    Čia iškilo problema, nes išmetė pranešimą „Gas estimation failed“. Nors aš ir spausdavau „Cancel transaction“ account'ų skiltyje vistiek rodė Ganache's sukurtus account'us. Pasidomėjau, kodėl iškilo ši problema ir nusprendžiau dar kartą taisyti kodą. Pataisius is supaprastinus šiek tiek kodą ir bandžius deploy'int problema išliko. Taip pat buvo siūlyta  pakeisti versiją su kuria kompiliavau į šiek tiek senesnę, nes problema galėoj kilti dėl evm versijų nesuderinamumo, bet tai taip pat nepadėjo. Kodą tikrinau daugybę kartų ir neradau klaidų ar vietų keliančių problemų, taigi nuspredžiau, jog problema kyla bandant atlikti testavimą, o ne su pačiu kodu. Tuomet išsiaiškinau, kaip suderinti evm versijas. Remix IDE failą sukompiliavau su 0.8.0 versija, o Ganache hardfork nustačiau į Istanbul. Tada vėl atlikus 2-4 punktus ir jie visi praėjo sėkmingai.
    
-![Screenshot 2024-12-12 103216](https://github.com/user-attachments/assets/fc8df274-2fab-4f78-8abb-b7518013bb6e)
+<img src="https://github.com/user-attachments/assets/fc8df274-2fab-4f78-8abb-b7518013bb6e"  width="300">
 
-![Screenshot 2024-12-12 103222](https://github.com/user-attachments/assets/7a9cd208-d370-4ff0-8083-87baa9cd6fa2)
+<img src="https://github.com/user-attachments/assets/7a9cd208-d370-4ff0-8083-87baa9cd6fa2"  width="500">
  
 ![Screenshot 2024-12-12 103226](https://github.com/user-attachments/assets/ef38759c-76d0-4e49-9844-cd8bbacacda8)
 
