@@ -101,8 +101,8 @@ contract ArtStore {
         require(product.price > 0, "Invalid product");
         // Patikrina, ar pirkėjas atlieka mokėjimą
         require(msg.value == product.price, "Incorrect payment amount");
-         // Užtikrina, kad pardavėjo adresas yra galiojantis
-        require(seller != address(0), "Invalid seller address");
+         // Užtikrina, kad pardavėjo adresas yra toks pat kaip prie produkto
+        require(product.seller == seller, "Seller address does not match the product seller");
          // Užtikrina, kad kurjerio adresas yra galiojantis
         require(courier != address(0), "Invalid courier address");
          // Sukuriamas unikalus užsakymo ID
@@ -176,13 +176,17 @@ contract ArtStore {
    
 <img src="https://github.com/user-attachments/assets/fc8df274-2fab-4f78-8abb-b7518013bb6e"  width="200">
 
+
 <img src="https://github.com/user-attachments/assets/7a9cd208-d370-4ff0-8083-87baa9cd6fa2"   width="200">
 
-<img src="https://github.com/user-attachments/assets/ef38759c-76d0-4e49-9844-cd8bbacacda8"   width="200">
 
-<img src="https://github.com/user-attachments/assets/481060c9-d9b8-4749-bc0c-ec9d774da81b"   width="200">
+<img src="https://github.com/user-attachments/assets/ef38759c-76d0-4e49-9844-cd8bbacacda8"   width="500">
 
-<img src="https://github.com/user-attachments/assets/697dd3c2-f987-4485-a409-0f4da4b71a62"   width="200">
+
+<img src="https://github.com/user-attachments/assets/481060c9-d9b8-4749-bc0c-ec9d774da81b"   width="500">
+
+
+<img src="https://github.com/user-attachments/assets/697dd3c2-f987-4485-a409-0f4da4b71a62"   width="100">
 
 6. Tikrinau funkciją addProduct
 ![Screenshot 2024-12-12 103409](https://github.com/user-attachments/assets/390fbe98-e7e9-4371-8161-0db0afe73b83)
