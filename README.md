@@ -20,28 +20,20 @@ Išmaniosios sutarties funkcijos:
 Logika:
  + Produkto pridėjimas:
    Pardavėjas gali pridėti produktą, suteikti jam pavadinamą ir kainą.
-   
- + Produkto "deaktyvavimas":
-   Pardavėjas gali ištrinti produktą iš sąrašo pakeičiant jo kainą į 0.
 
  + Užsakymo pateikimas:
    Pirkėjas pasirenka prekes ir pateikia užsakymą per decentralizuotą aplikaciją.
-   Pirkėjas atlieka mokėjimą, o pinigai laikomi išmaniojoje sutartyje kaip užstatas.
+   Pirkėjas atlieka mokėjimą, o pinigai laikomi išmaniojoje sutartyje.
    
  + Užsakymo vykdymas:
    Pardavėjas gauna užsakymo informaciją ir pradeda vykdymą.
-   Prekės pereina į „Gamybos“ būseną, o vėliau į „Paruošta siuntimui“ būseną.
-   
- + Siuntimas:
-   Pardavėjas perduoda prekes kurjeriui, o sutartis automatiškai atnaujina užsakymo būseną į „Išsiųsta“.
+    Pardavėjas perduoda prekes kurjeriui ir užsakymui nurodoma „Shipped“ būseną.
    
  + Pristatymas:
-   Kurjeris pristato prekes pirkėjui ir pažymi užsakymą kaip „Pristatyta“ per decentralizuotą aplikaciją.
+   Kurjeris pristato prekes pirkėjui ir pažymi užsakymą kaip „Delivered“ per decentralizuotą aplikaciją.
    
  + Apmokėjimas pardavėjui:
    Kai kurjeris patvirtina, kad užsakymas pristatytas, išmanioji sutartis automatiškai perveda prekių kainą pardavėjui.
-   
-
 
    
 ## 2. Verslo logikos realizacija
