@@ -1,6 +1,5 @@
 # 4_BGT
 ## Reikalingi instaliavimai
- + Truffle IDE (Node ir npm tinkamas versijas jau turiu)
  + Meta Mask Google Chrome extention
  + Ganache
 
@@ -173,7 +172,7 @@ contract ArtStore {
 2. Lokalūjį testavimą nusprendžiau daryti su Ganache. Parsisiuntus ir įsijungus programą paspažiau „Quickstart Ethereum“ ir man pakrovė 10 account'ų.
 3. Remix IDE nuėjau į „Deploy & run transactions“ ir prie environment pasirinkau „Custom - external http provider“ ir pakeičiau RCP URL galą į 7545, kad sutaptų su Ganache'je nurodytu.
 4. Paspaudžiau Deploy
-   Čia iškilo problema, nes išmetė pranešimą „Gas estimation failed“. Nors aš ir spausdavau „Cancel transaction“ account'ų skiltyje vistiek rodė Ganache's sukurtus account'us. Pasidomėjau, kodėl iškilo ši problema ir nusprendžiau dar kartą taisyti kodą. Pataisius is supaprastinus šiek tiek kodą ir bandžius deploy'int problema išliko. Taip pat buvo siūlyta  pakeisti versiją su kuria kompiliavau į šiek tiek senesnę, nes problema galėoj kilti dėl evm versijų nesuderinamumo, bet tai taip pat nepadėjo. Kodą tikrinau daugybę kartų ir neradau klaidų ar vietų keliančių problemų, taigi nuspredžiau, jog problema kyla bandant atlikti testavimą, o ne su pačiu kodu.
+   Čia iškilo problema, nes išmetė pranešimą „Gas estimation failed“. Nors aš ir spausdavau „Cancel transaction“ account'ų skiltyje vistiek rodė Ganache's sukurtus account'us. Pasidomėjau, kodėl iškilo ši problema ir nusprendžiau dar kartą taisyti kodą. Pataisius is supaprastinus šiek tiek kodą ir bandžius deploy'int problema išliko. Taip pat buvo siūlyta  pakeisti versiją su kuria kompiliavau į šiek tiek senesnę, nes problema galėoj kilti dėl evm versijų nesuderinamumo, bet tai taip pat nepadėjo. Kodą tikrinau daugybę kartų ir neradau klaidų ar vietų keliančių problemų, taigi nuspredžiau, jog problema kyla bandant atlikti testavimą, o ne su pačiu kodu. Tuomet išsiaiškinau, kaip suderinti evm versijas. Remix IDE failą sukompiliavau su 0.8.0 versija, o Ganache hardfork nustačiau į Istanbul. Tada vėl atlikus 2-4 punktus ir jie visi praėjo sėkmingai. 
    Lokalaus testavimo atlikti nepavyko, todėl nusprendžiau, kad geriau nebandyti ir testuoti tinkle ir atlikti sekančių užduočių.
 ## 4. Logų peržiūra
 
