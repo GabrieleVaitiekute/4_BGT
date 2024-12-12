@@ -278,10 +278,8 @@ Tik pardavėjo account'o kiekis pinigų pasikeitė - padidėjo.
 
 ### Tinklinis
 
-Atlikti tinkliniam testavimui parsisiunčiau MetaMask ir susikūriau piniginę. 
+Atlikti tinkliniam testavimui parsisiunčiau MetaMask ir susikūriau piniginę. MetaMask support'e radau pranešimą. 
 
+<img  src="https://github.com/user-attachments/assets/795a0d67-2ae1-44a6-b788-58c277888a64"   width="400">
 
-
-## 4. Logų peržiūra
-
-## 5. Front-end
+Po apačia testavimui buvo nurodytas pasiūlymas - Sepolia.
