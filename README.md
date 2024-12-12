@@ -276,7 +276,7 @@ Atlikti tinkliniam testavimui parsisiunčiau MetaMask ir susikūriau piniginę. 
 
 Po apačia testavimui buvo nurodytas pasiūlymai - Sepolia ir Holešky. Sepolia jau integruota į MetaMask, o Holešky ne. Iš padžių reikėjo padaryti, kad rodytų testinius network. Kilo problemu gaunant testinių eth.
 
-## 3. Front-end
+## 4. Front-end
 
 Atlikti minimalų front-end naudojau vs code ir biblioteka web3. Dizainą labai minimalų atlikti pavyko, bet padaryti, kad veiktų, deja, ne.
 
