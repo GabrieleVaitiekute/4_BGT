@@ -176,21 +176,30 @@ contract ArtStore {
    
 <img  src="https://github.com/user-attachments/assets/fc8df274-2fab-4f78-8abb-b7518013bb6e"  width="200">
 
+
 Paspaudus „Deploy“ „Debug“ skyrelyje pasirodė blokas.
+
 
 <img  src="https://github.com/user-attachments/assets/ef38759c-76d0-4e49-9844-cd8bbacacda8"   width="500">
 
+
 Taip pat Ganache programoje prie transakcijų rodė „Contact creation“, prie blokų taip pat rodė vieną bloką.
+
 
 <img  src="https://github.com/user-attachments/assets/481060c9-d9b8-4749-bc0c-ec9d774da81b"   width="500">
 
+
 Prie account'ų galime matyti, kad buvo nuskaičiuota dėl sukūrimo.
+
 
 <img  src="https://github.com/user-attachments/assets/697dd3c2-f987-4485-a409-0f4da4b71a62"   width="80">
 
+
 Na o Remix galima matyti funkijas, kurias reikia pratestuoti.
 
+
 <img  src="https://github.com/user-attachments/assets/7a9cd208-d370-4ff0-8083-87baa9cd6fa2"   width="200">
+
 
 5. Tikrinau funkciją addProduct
 
